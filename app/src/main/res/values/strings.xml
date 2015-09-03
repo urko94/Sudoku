@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Sudoku</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_play">PlayActivity</string>
+    <string name="title_activity_new_game">NewGameActivity</string>
+    <string name="title_activity_game">GameActivity</string>
+    <string name="title_activity_sudoku_solver">SudokuSolverActivity</string>
+    <string name="title_activity_custom_puzzle">CustomPuzzleActivity</string>
+    <string name="title_activity_resume_game">ResumeGameActivity</string>
+</resources>

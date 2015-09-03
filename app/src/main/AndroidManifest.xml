@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.apps.urban.sudoku" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/win_icon"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PlayActivity"
+            android:label="@string/title_activity_play"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.apps.urban.sudoku.MainActivity" />
+        </activity>
+        <activity
+            android:name=".NewGameActivity"
+            android:label="@string/title_activity_new_game"
+            android:parentActivityName=".PlayActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.apps.urban.sudoku.PlayActivity" />
+        </activity>
+        <activity
+            android:name=".GameActivity"
+            android:label="@string/title_activity_game"
+            android:parentActivityName=".NewGameActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.apps.urban.sudoku.NewGameActivity" />
+        </activity>
+        <activity
+            android:name=".SudokuSolverActivity"
+            android:label="@string/title_activity_sudoku_solver"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.apps.urban.sudoku.MainActivity" />
+        </activity>
+        <activity
+            android:name=".CustomPuzzleActivity"
+            android:label="@string/title_activity_custom_puzzle"
+            android:parentActivityName=".PlayActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.apps.urban.sudoku.PlayActivity" />
+        </activity>
+        <activity
+            android:name=".ResumeGameActivity"
+            android:label="@string/title_activity_resume_game"
+            android:parentActivityName=".PlayActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.apps.urban.sudoku.PlayActivity" />
+        </activity>
+    </application>
+
+</manifest>
